@@ -1,0 +1,105 @@
+/*
+    SMOS style sheet
+
+    Filename: styles.css
+    Authors: John Fabian and Lucas Furlong
+    Date: 7/12/2022
+*/
+
+/* reset styles */
+a, body, div, footer, header, h1, 
+img, nav, p {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 1em;
+	height: 100%;
+}
+a:link {
+	text-decoration: none;
+	color: black;
+}
+a:visited {
+	color: black;
+}
+
+/*body and page container */
+.container{
+	margin: 0 auto;
+	border: 1px solid black;
+	min-height: 100%;
+}
+
+/* body */
+body {
+	
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+/* headings */
+header{
+	background-color: #CDD7D6;
+}
+h1{
+	text-align: center;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	color: #F87060;
+	background-color: #102542;
+	margin: 0;
+	font-size: xx-large;
+}
+h2{
+	text-align: center;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	color: #F87060;
+	background-color: #102542;
+	margin: 0;
+	font-size: large;
+}
+
+/*navigation bar*/
+nav{
+	text-align: center;
+	color: #F87060;
+}
+nav p{
+	display: inline-block;
+	font-weight: bold;
+	margin: 0.7em;
+	color: #F87060;
+}
+nav a:link {
+	text-decoration: none;
+}
+nav a:visited {
+	color: #F87060;
+}
+
+/* footer */
+
+
+/* print styles */
+@media print {
+	body h1, article, footer {
+		color: #000;
+		background-color: #fff;
+	}
+	body {
+		max-width: 100%;
+		border: 0;
+	}
+	nav {
+		display: none;
+	}
+	img {
+		display: none;
+	}
+	div.main a {
+		display: none;
+	}
+}
+@page {
+	margin: 1in;
+}
