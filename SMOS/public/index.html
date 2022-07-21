@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Created by John Fabian and Lucas Furlong -->
+<!--Created by Lucas Furlong -->
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width-device-width">
@@ -18,32 +18,29 @@
     <title>SMOS (Shi**y Memes on Shirts)</title>
 </head>
 
-<body class="m-0 p-0 absolute w-full h-screen bg-beau-blue">
-    <div id="container" class="relative m-h-full">
+<body class=" bg-beau-blue font-sans">
+    <div id="container" class="flex flex-col ">
         <header>
             <div id="nav-placeholder"></div>
         </header>
-        <div class="bg-beau-blue absolute w-full h-screen box-border flex">
-            <!-- Slider main container -->
-            <div class="swiper h-50">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/public/assets/factory.jpg"></div>
+        <div class="bg-beau-blue w-full h-screen box-border flex flex-auto flex-col pb-10">
+            <div class="swiper w-full">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide left-0 relative inline-block">
+                        <img class="w-full h-auto" src="/public/assets/factory.jpg">
+                        <a href="create.html" class="absolute bottom-11 right-11 text-oxford-blue font-bold border-2 text-center rounded-lg border-oxford-blue w-40 h-10 text-2xl">Create</a>
+                    </div>
                     <div class="swiper-slide">Slide 2</div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
+            <div>hello</div>
         </div>
-        <footer id="foot-placeholder"></footer>
+        <footer>
+            <div id="foot-placeholder"></div>
+        </footer>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
